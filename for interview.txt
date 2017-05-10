@@ -1,6 +1,6 @@
-# ���աA�ϥΪ��{���y���Oc++
+# 筆試，使用的程式語言是c++
 
-1. ��list�����Ǥ���
+1. 把list的順序反轉
 ANS:
 ListNode* reverse_of_List(ListNode* head) 
 {
@@ -25,7 +25,7 @@ ListNode* reverse_of_List(ListNode* head)
     return ans;
 }
 
-2. �мg�@�ӵ{���AInput �O�@�ӼƦr�AOutput �O�q 1 ��o�ӼƦr�A�������Ҧ� 3 �����ƥH�� 5 �����ơA���O�ݭn�O�d�P�ɬO 3 �M 5 �����ƪ��`�Ʀr�ơC
+2. 請寫一個程式，Input 是一個數字，Output 是從 1 到這個數字，扣除掉所有 3 的倍數以及 5 的倍數，但是需要保留同時是 3 和 5 的倍數的總數字數。
 ANS:
 void show_number(int num)
 {
@@ -49,8 +49,8 @@ void show_number(int num)
 
 4.
 ANS:
-��]�b��"�T�H�U�X300��" ���ӥ]�t�F "���I����"(250) + "�A�ȥ����ӧ��٥L�̪��@�H����"(50), 
-�ӫ᭱��"�A�ȥ����ӧ��٥L�̪��@�H����"(50) �n��Ѧ� "��ڮ��쪺��"(30)+ "�Q�Y������"(20)
-�ҥH "�T�H�U�X 300 �� - �A�ȥ��ٵ��L�̤@�H 30 ��"���ԭz���A"�T�H�U�X300"��ڤw�g�]�t"�A�ȥ��ٵ��L�̤@�H 30 ��"�F
-
+原因在於"三人各出300中" 應該包含了 "應付的錢"(250) + "服務生應該找還他們的一人的錢"(50), 
+而後面的"服務生應該找還他們的一人的錢"(50) 要拆解成 "實際拿到的錢"(30)+ "被吃掉的錢"(20)
+所以 "三人各出 300 元 - 服務生還給他們一人 30 元"的敘述中，"三人各出300"實際已經包含"服務生還給他們一人 30 元"了
+後面再減一次是double count了
 
